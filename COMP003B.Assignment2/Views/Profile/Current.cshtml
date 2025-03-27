@@ -1,4 +1,9 @@
-﻿@page
-@model COMP003B.Assignment2.Views.Profile.CurrentModel
-@{
+﻿﻿@{
+	ViewData["Title"] = "Current";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+
 }
+
+<h2>@ViewData["Current"]</h2>
+<p>Highlights previously completed projects.</p>
+@await Html.PartialAsync("_Sidebar")
