@@ -1,4 +1,9 @@
-﻿@page
-@model COMP003B.Assignment2.Views.Profile.IdeasModel
-@{
+﻿﻿@{
+	ViewData["Title"] = "Ideas";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+
 }
+
+<h2>@ViewData["Ideas"]</h2>
+<p>Presents a list of ideas for future projects.</p>
+@await Html.PartialAsync("_Sidebar")
